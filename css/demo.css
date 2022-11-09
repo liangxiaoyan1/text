@@ -1,24 +1,36 @@
 .box1{
     width:320px;
     height:320px;
-    transition: all 10s;
     margin: 150px auto;
-    position: absolute;
+    position: relative;
+    animation:mymove infinite;
+	animation-duration:25s;
 }
-.box1:hover {
-    transform: rotate(360deg);
-  }
+/* .box1:hover {
+    transform: rotate(720deg);
+  } */
+  @keyframes mymove
+{
+	from{
+        transform: rotate(3600deg);
+    }
+    to{
+        transform: rotate(0deg);
+    }
+}
 .box2{
     width:320px;
     height:320px;
-    transition: all 10s;
     margin: 150px auto;
-    position: relative;
+    position: absolute;
     top: 0;
+    right: 300px;
+    animation:mymove infinite;
+	animation-duration:25s;
 }
-.box2:hover {
+/* .box2:hover {
     transform: rotate(360deg);
-  }
+  } */
 .box{
     width: 150px;
     height: 150px;
