@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<style>
+    @keyframes suo {
+        0% {}
+
+        70% {
+            width: 40px;
+            height: 40px;
+            opacity: 1;
+        }
+
+        100% {
+            width: 60px;
+            height: 60px;
+            opacity: 0;
+        }
+    }
+
+
+    .map {
+        position: relative;
+        height: 800px;
+        width: 800px;
+        margin: auto;
+        background: url(media/map.png) no-repeat #000;
+    }
+
+    .city {
+        position: absolute;
+        right: 243px;
+        top: 228px;
+
+    }
+
+    .dotted {
+        width: 8px;
+        height: 8px;
+        background-color: skyblue;
+        border-radius: 50%;
+    }
+
+    div[class^='purple'] {
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        box-shadow: 0 0 20px skyblue;
+    }
+
+    .purple1 {
+        animation: suo 1s linear 0s infinite;
+    }
+
+    .purple2 {
+        animation: suo 1s linear 0.4s infinite;
+
+    }
+
+    .purple3 {
+        animation: suo 1s linear 0.8s infinite;
+
+    }
+</style>
+
+<body>
+    <div class="map">
+        <div class="city">
+            <div class="dotted"></div>
+            <div class="purple1"></div>
+            <div class="purple2"></div>
+            <div class="purple3"></div>
+        </div>
+
+    </div>
+</body>
+
+</html>

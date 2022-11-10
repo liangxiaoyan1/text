@@ -1,0 +1,62 @@
+.box1{
+    width:320px;
+    height:320px;
+    margin: 150px auto;
+    position: relative;
+    animation:mymove infinite;
+	animation-duration:25s;
+}
+/* .box1:hover {
+    transform: rotate(720deg);
+  } */
+  @keyframes mymove
+{
+	from{
+        transform: rotate(3600deg);
+    }
+    to{
+        transform: rotate(0deg);
+    }
+}
+.box2{
+    width:320px;
+    height:320px;
+    margin: 150px auto;
+    position: absolute;
+    top: 0;
+    right: 300px;
+    animation:mymove infinite;
+	animation-duration:25s;
+}
+/* .box2:hover {
+    transform: rotate(360deg);
+  } */
+.box{
+    width: 150px;
+    height: 150px;
+    box-shadow: 15px 15px 5px hsl(0, 0%, 55%);
+}
+.one{
+    background: red;
+    position: absolute;
+    border-radius: 0 150px 0 150px;
+}
+.two{
+    background: rgb(223, 138, 138);
+    position:relative;
+    top: 0;
+    left: 150px;
+    border-radius: 150px 0 150px 0 ;
+}
+.three{
+    background: #000;
+    position: absolute;
+    border-radius: 150px 0 150px 0 ;
+}
+.four{
+    background: rgb(117, 231, 226);
+    position:relative;
+    top: 0;
+    left: 150px;
+    border-radius: 0 150px 0 150px;
+}
